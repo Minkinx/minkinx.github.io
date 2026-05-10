@@ -104,3 +104,7 @@ deploy:
   type: git
   repository: https://github.com/Minkinx/minkinx.github.io.git
   branch: main
+
+# hexo-admin
+admin:
+  deployCommand: 'hexo deploy'
