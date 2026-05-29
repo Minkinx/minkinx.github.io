@@ -9,7 +9,7 @@
   
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://minkinx.github.io';window.REIMU_CONFIG.relative = '/';</script>
   <title>
-    友情链接 | Minkinx&#39;s Blog
+    大模型应用安全落地实践 —— 完整 PPT 分享 | Minkinx&#39;s Blog
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media='all'">
@@ -17,19 +17,67 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="申请方法 添加本站后，在本页留言，格式如下  123456&#96;&#96;&#96;yml- name: #您的名字  url: #您的网址  desc: #简短描述  image: #一张图片&#96;&#96;&#96;  小伙伴们">
-<meta property="og:type" content="website">
-<meta property="og:title" content="友情链接">
-<meta property="og:url" content="https://minkinx.github.io/friend/index.html">
+    <meta name="description" content="本文整理自微信公众号 铸盾笔记 发布的「大模型应用安全建设」系列文章，原作者为壹零捌108。该系列围绕大模型安全防护设计与落地实践框架，系统性地覆盖了甲方安全负责人如何规划、选型、建设与汇报的完整路径。 内容涵盖八大主题：顶层规划、安全评估（攻击面梳理与差距分析）、护栏选型与输入输出防护、Agent 权限治理与工具调用安全、供应链安全与数据防护、合规备案与监管实操、安全评测与红队测试、成果汇报与持">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大模型应用安全落地实践 —— 完整 PPT 分享">
+<meta property="og:url" content="https://minkinx.github.io/2026/05/29/llm-security-practical-guide/index.html">
 <meta property="og:site_name" content="Minkinx&#39;s Blog">
-<meta property="og:description" content="申请方法 添加本站后，在本页留言，格式如下  123456&#96;&#96;&#96;yml- name: #您的名字  url: #您的网址  desc: #简短描述  image: #一张图片&#96;&#96;&#96;  小伙伴们">
+<meta property="og:description" content="本文整理自微信公众号 铸盾笔记 发布的「大模型应用安全建设」系列文章，原作者为壹零捌108。该系列围绕大模型安全防护设计与落地实践框架，系统性地覆盖了甲方安全负责人如何规划、选型、建设与汇报的完整路径。 内容涵盖八大主题：顶层规划、安全评估（攻击面梳理与差距分析）、护栏选型与输入输出防护、Agent 权限治理与工具调用安全、供应链安全与数据防护、合规备案与监管实操、安全评测与红队测试、成果汇报与持">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://minkinx.github.io/images/banner.webp">
-<meta property="article:published_time" content="2026-05-09T18:41:46.018Z">
-<meta property="article:modified_time" content="2026-05-09T18:41:46.018Z">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image1.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image2.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image3.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image4.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image5.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image6.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image7.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image8.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image9.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image10.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image11.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image12.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image13.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image14.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image15.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image16.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image17.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image18.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image19.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image20.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image21.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image22.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image23.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image24.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image25.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image26.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image27.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image28.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image29.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image30.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image31.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image32.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image33.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image34.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image35.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image36.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image37.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image38.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image39.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image40.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image41.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image42.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image43.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image44.png">
+<meta property="og:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image45.png">
+<meta property="article:published_time" content="2026-05-29T10:39:51.490Z">
+<meta property="article:modified_time" content="2026-05-29T10:49:04.840Z">
 <meta property="article:author" content="Minkinx">
+<meta property="article:tag" content="AI安全">
+<meta property="article:tag" content="LLM">
+<meta property="article:tag" content="企业安全">
+<meta property="article:tag" content="大模型安全">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://minkinx.github.io/images/banner.webp">
+<meta name="twitter:image" content="https://minkinx.github.io/imgs/llm-security-ppt/image1.png">
     <link rel="alternate" href="/atom.xml" title="Minkinx's Blog" type="application/atom+xml">
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -126,13 +174,13 @@
   </nav>
 </div>
 <header id="header" aria-label="Site header">
-      <picture>
-      </picture>
-        <img  fetchpriority="high" src="/images/banner.webp" alt="友情链接">
+        <picture>
+        </picture>
+          <img  fetchpriority="high" src="/images/banner.webp" alt="大模型应用安全落地实践 —— 完整 PPT 分享">
   <div id="header-outer">
     <div id="header-title">
           <span id="logo">
-            <h1 data-aos="slide-up">友情链接</h1>
+            <h1 data-aos="slide-up">大模型应用安全落地实践 —— 完整 PPT 分享</h1>
           </span>
         <h2 id="subtitle-wrap" data-aos="slide-down">
         </h2>
@@ -142,10 +190,15 @@
 
         <div id="content" aria-label="Page content"  class="sidebar-right" >
           <aside id="sidebar" aria-label="Sidebar">
-  <div class="sidebar-wrapper-container ">
+  <div class="sidebar-wrapper-container sticky">
   <div class="sidebar-wrapper">
     <div class="sidebar-wrap" data-aos="fade-up">
-        <div class="sidebar-author">
+          <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+    
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/lingmeng.webp" data-sizes="auto" alt="Minkinx" class="lazyload">
   <div class="sidebar-author-name">Minkinx</div>
   <div class="sidebar-description"></div>
@@ -202,7 +255,11 @@
         <div class="sidebar-menu-link">友链</div>
       </div>
 </div>
-
+</div>
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
     </div>
   </div>
   <div class="sidebar-widget">
@@ -210,13 +267,13 @@
   </div>
 </aside>
 
-          <section id="main" aria-label="Main content"><article id="page-" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main" aria-label="Main content"><article id="post-llm-security-practical-guide" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner" data-aos="fade-up">
     <div class="article-meta">
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
-    <time datetime="2026-05-09T18:41:46.018Z" itemprop="datePublished">2026-05-10</time>
-    <time style="display: none;" id="post-update-time">2026-05-10</time>
+    <time datetime="2026-05-29T10:39:51.490Z" itemprop="datePublished">2026-05-29</time>
+    <time style="display: none;" id="post-update-time">2026-05-29</time>
   </span>
 </div>
 
@@ -225,20 +282,32 @@
     <div class="hr-line"></div>
     
     <div class="e-content article-entry" itemprop="articleBody">
-        <h2 id="申请方法"><a href="#申请方法" class="headerlink" title="申请方法"></a>申请方法</h2><ul>
-<li>添加本站后，在本页留言，格式如下</li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="comment">#您的名字</span></span><br><span class="line">  <span class="attr">url:</span> <span class="comment">#您的网址</span></span><br><span class="line">  <span class="attr">desc:</span> <span class="comment">#简短描述</span></span><br><span class="line">  <span class="attr">image:</span> <span class="comment">#一张图片</span></span><br><span class="line"><span class="string">```</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="小伙伴们"><a href="#小伙伴们" class="headerlink" title="小伙伴们"></a>小伙伴们</h2>
+        <p>本文整理自微信公众号 <strong>铸盾笔记</strong> 发布的「大模型应用安全建设」系列文章，原作者为壹零捌108。该系列围绕大模型安全防护设计与落地实践框架，系统性地覆盖了甲方安全负责人如何规划、选型、建设与汇报的完整路径。</p>
+<p>内容涵盖八大主题：顶层规划、安全评估（攻击面梳理与差距分析）、护栏选型与输入输出防护、Agent 权限治理与工具调用安全、供应链安全与数据防护、合规备案与监管实操、安全评测与红队测试、成果汇报与持续运营。以下为完整 PPT 内容：</p>
+<p><img src="/imgs/llm-security-ppt/image1.png" alt="slide-01"><br><img src="/imgs/llm-security-ppt/image2.png" alt="slide-02"><br><img src="/imgs/llm-security-ppt/image3.png" alt="slide-03"><br><img src="/imgs/llm-security-ppt/image4.png" alt="slide-04"><br><img src="/imgs/llm-security-ppt/image5.png" alt="slide-05"><br><img src="/imgs/llm-security-ppt/image6.png" alt="slide-06"><br><img src="/imgs/llm-security-ppt/image7.png" alt="slide-07"><br><img src="/imgs/llm-security-ppt/image8.png" alt="slide-08"><br><img src="/imgs/llm-security-ppt/image9.png" alt="slide-09"><br><img src="/imgs/llm-security-ppt/image10.png" alt="slide-10"><br><img src="/imgs/llm-security-ppt/image11.png" alt="slide-11"><br><img src="/imgs/llm-security-ppt/image12.png" alt="slide-12"><br><img src="/imgs/llm-security-ppt/image13.png" alt="slide-13"><br><img src="/imgs/llm-security-ppt/image14.png" alt="slide-14"><br><img src="/imgs/llm-security-ppt/image15.png" alt="slide-15"><br><img src="/imgs/llm-security-ppt/image16.png" alt="slide-16"><br><img src="/imgs/llm-security-ppt/image17.png" alt="slide-17"><br><img src="/imgs/llm-security-ppt/image18.png" alt="slide-18"><br><img src="/imgs/llm-security-ppt/image19.png" alt="slide-19"><br><img src="/imgs/llm-security-ppt/image20.png" alt="slide-20"><br><img src="/imgs/llm-security-ppt/image21.png" alt="slide-21"><br><img src="/imgs/llm-security-ppt/image22.png" alt="slide-22"><br><img src="/imgs/llm-security-ppt/image23.png" alt="slide-23"><br><img src="/imgs/llm-security-ppt/image24.png" alt="slide-24"><br><img src="/imgs/llm-security-ppt/image25.png" alt="slide-25"><br><img src="/imgs/llm-security-ppt/image26.png" alt="slide-26"><br><img src="/imgs/llm-security-ppt/image27.png" alt="slide-27"><br><img src="/imgs/llm-security-ppt/image28.png" alt="slide-28"><br><img src="/imgs/llm-security-ppt/image29.png" alt="slide-29"><br><img src="/imgs/llm-security-ppt/image30.png" alt="slide-30"><br><img src="/imgs/llm-security-ppt/image31.png" alt="slide-31"><br><img src="/imgs/llm-security-ppt/image32.png" alt="slide-32"><br><img src="/imgs/llm-security-ppt/image33.png" alt="slide-33"><br><img src="/imgs/llm-security-ppt/image34.png" alt="slide-34"><br><img src="/imgs/llm-security-ppt/image35.png" alt="slide-35"><br><img src="/imgs/llm-security-ppt/image36.png" alt="slide-36"><br><img src="/imgs/llm-security-ppt/image37.png" alt="slide-37"><br><img src="/imgs/llm-security-ppt/image38.png" alt="slide-38"><br><img src="/imgs/llm-security-ppt/image39.png" alt="slide-39"><br><img src="/imgs/llm-security-ppt/image40.png" alt="slide-40"><br><img src="/imgs/llm-security-ppt/image41.png" alt="slide-41"><br><img src="/imgs/llm-security-ppt/image42.png" alt="slide-42"><br><img src="/imgs/llm-security-ppt/image43.png" alt="slide-43"><br><img src="/imgs/llm-security-ppt/image44.png" alt="slide-44"><br><img src="/imgs/llm-security-ppt/image45.png" alt="slide-45"></p>
+<p>以上是本次分享的全部内容。该系列从顶层规划到持续运营，完整地呈现了大模型应用安全建设的实践路径，对正在建设或规划大模型安全体系的安全团队具有较高的参考价值。</p>
+<blockquote>
+<p>转载自：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/gGFjGjXBhNO8die6GvL7rQ">大模型应用安全落地实践 —— 完整 PPT 分享</a><br>作者：铸盾笔记（壹零捌108）  </p>
+</blockquote>
 
     </div>
     <footer class="article-footer">
       
-      
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/AI%E5%AE%89%E5%85%A8/" rel="tag" title="AI安全">AI安全</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/LLM/" rel="tag" title="LLM">LLM</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E4%BC%81%E4%B8%9A%E5%AE%89%E5%85%A8/" rel="tag" title="企业安全">企业安全</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AE%89%E5%85%A8/" rel="tag" title="大模型安全">大模型安全</a></li></ul>
+
     </footer>
   </div>
-  
+    <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
+    <div class="article-nav-link-wrap right">
+          <img data-src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800" data-sizes="auto" alt="Burp 工具推荐合集（转载）" class="lazyload">
+      <a href="/2026/05/26/burp-tools-recommendation/" aria-label="后一篇: Burp 工具推荐合集（转载）"  title="后一篇: Burp 工具推荐合集（转载）"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+          Burp 工具推荐合集（转载）
+      </h3>
+    </div>
+  </nav>
+
 </article>
 
 
@@ -284,7 +353,12 @@
       </div>
       <nav id="mobile-nav" aria-label="Mobile navigation">
   <div class="sidebar-wrap">
-      <div class="sidebar-author">
+        <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+    
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/lingmeng.webp" data-sizes="auto" alt="Minkinx" class="lazyload">
   <div class="sidebar-author-name">Minkinx</div>
   <div class="sidebar-description"></div>
@@ -341,8 +415,12 @@
         <div class="sidebar-menu-link">友链</div>
       </div>
 </div>
-
+</div>
   </div>
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
 </nav>
 
     </div>
@@ -405,13 +483,13 @@
       <script data-pjax>
         window.REIMU_POST = {
           author: "Minkinx",
-          title: "友情链接",
-          url: "https://minkinx.github.io/friend/index.html",
+          title: "大模型应用安全落地实践 —— 完整 PPT 分享",
+          url: "https://minkinx.github.io/2026/05/29/llm-security-practical-guide/",
           excerpt: "",
           description: "",
-          stripContent: "申请方法 添加本站后，在本页留言，格式如下  123456```yml- name: #您的名字  url: #您的网址  desc: #简短描述  image: #一张图片```  小伙伴们 ",
-          date: "Sun May 10 2026 02:41:46 GMT+0800",
-          updated: "Sun May 10 2026 02:41:46 GMT+0800",
+          stripContent: "本文整理自微信公众号 铸盾笔记 发布的「大模型应用安全建设」系列文章，原作者为壹零捌108。该系列围绕大模型安全防护设计与落地实践框架，系统性地覆盖了甲方安全负责人如何规划、选型、建设与汇报的完整路径。 内容涵盖八大主题：顶层规划、安全评估（攻击面梳理与差距分析）、护栏选型与输入输出防护、Agent 权限治理与工具调用安全、供应链安全与数据防护、合规备案与监管实操、安全评测与红队测试、成果汇报与持续运营。以下为完整 PPT 内容：  以上是本次分享的全部内容。该系列从顶层规划到持续运营，完整地呈",
+          date: "Fri May 29 2026 18:39:51 GMT+0800",
+          updated: "Fri May 29 2026 18:49:04 GMT+0800",
           cover: "/images/banner.webp",
         };
       </script>
